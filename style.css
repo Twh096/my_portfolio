@@ -1,0 +1,29 @@
+body {
+    background-color: rgb(202, 249, 255);
+}
+
+.profile-card {
+    background: #fff;
+    border: 2px solid #0a1a4f;
+    border-radius: 16px;
+    max-width: 350px;
+    margin: 40px auto;
+    padding: 2em 1.5em;
+    box-shadow: 0 4px 16px rgba(10, 26, 79, 0.08);
+    text-align: center;
+}
+
+h1 {
+    font-size: 3em;
+    color: #0a1a4f;
+}
+
+h2 {
+    font-size: 2em;
+    color: #2541b2;
+}
+
+p {
+    font-size: 1.25em;
+    line-height: 1.7;
+}
