@@ -6,8 +6,8 @@ I am a college student who has recently completed my freshman year. While my maj
 I also plan to explore entrepreneurship, with the goal of one day launching innovative ventures that combine my interest in technology with real-world problem solving. As part of this vision, I am particularly interested in leveraging artificial intelligence to enhance productivity and streamline workflows in both personal and professional settings.
 
 ### Skills
-Generative AI
-Python
-Communication
+Generative AI,
+Python,
+Communication,
 CSS
 
