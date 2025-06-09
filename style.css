@@ -99,3 +99,46 @@ p {
     color: #222;
     margin-bottom: 0.5em;
 }
+
+.skills ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skills li {
+    position: relative;
+    padding-left: 2em;
+    margin-bottom: 0.5em;
+    font-size: 1.08em;
+    color: #222;
+}
+
+/* Custom icons for each skill */
+.skills li:nth-child(1)::before {
+    content: "🤖"; /* Generative AI */
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.skills li:nth-child(2)::before {
+    content: "🐍"; /* Python */
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.skills li:nth-child(3)::before {
+    content: "💬"; /* Communication */
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.skills li:nth-child(4)::before {
+    content: "🎨"; /* CSS */
+    position: absolute;
+    left: 0;
+    top: 0;
+}
