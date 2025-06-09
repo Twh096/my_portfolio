@@ -47,12 +47,13 @@ p {
 }
 
 .about-me {
-    background: #f4f8fb;
-    border-radius: 12px;
-    max-width: 600px;
-    margin: 32px auto 0 auto;
+    background: #fff; /* Match white block color */
+    border-radius: 16px; /* Match profile-card */
+    max-width: 700px; /* Make lines fuller */
+    margin: 40px auto 0 auto; /* Center and match spacing */
     padding: 2em 2em 1.5em 2em;
-    box-shadow: 0 2px 8px rgba(10, 26, 79, 0.06);
+    box-shadow: 0 4px 16px rgba(10, 26, 79, 0.08); /* Match profile-card shadow */
+    text-align: center; /* Center content */
 }
 
 .about-me h2 {
@@ -71,12 +72,12 @@ p {
 }
 
 .skills {
-    background: #f4f8fb;
-    border-radius: 12px;
-    max-width: 600px;
-    margin: 32px auto;
+    background: #fff; /* Match white block color */
+    border-radius: 16px; /* Match profile-card */
+    max-width: 700px; /* Make lines fuller */
+    margin: 40px auto;
     padding: 1.5em 2em;
-    box-shadow: 0 2px 8px rgba(10, 26, 79, 0.06);
+    box-shadow: 0 4px 16px rgba(10, 26, 79, 0.08); /* Match profile-card shadow */
     text-align: left;
 }
 
@@ -86,18 +87,6 @@ p {
     margin-bottom: 0.7em;
     font-size: 1.4em;
     font-weight: 600;
-}
-
-.skills ul {
-    list-style: disc inside;
-    padding-left: 1em;
-    margin: 0;
-}
-
-.skills li {
-    font-size: 1.08em;
-    color: #222;
-    margin-bottom: 0.5em;
 }
 
 .skills ul {
