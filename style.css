@@ -1,5 +1,8 @@
 body {
     background-color: rgb(202, 249, 255);
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    min-height: 100vh;
 }
 
 .profile-card {
@@ -13,17 +16,86 @@ body {
     text-align: center;
 }
 
+.profile-card img {
+    display: block;
+    margin: 0 auto 1em;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 3px solid #0a1a4f;
+}
+
 h1 {
-    font-size: 3em;
+    font-size: 2em;
     color: #0a1a4f;
+    margin: 0.5em 0 0.2em 0;
 }
 
 h2 {
-    font-size: 2em;
+    font-size: 1.3em;
     color: #2541b2;
+    margin: 0 0 1em 0;
+    font-weight: 500;
 }
 
 p {
-    font-size: 1.25em;
+    font-size: 1.1em;
     line-height: 1.7;
+    color: #333;
+    margin: 0;
+}
+
+.about-me {
+    background: #f4f8fb;
+    border-radius: 12px;
+    max-width: 600px;
+    margin: 32px auto 0 auto;
+    padding: 2em 2em 1.5em 2em;
+    box-shadow: 0 2px 8px rgba(10, 26, 79, 0.06);
+}
+
+.about-me h2 {
+    color: #2541b2;
+    margin-top: 0;
+    margin-bottom: 0.7em;
+    font-size: 1.4em;
+    font-weight: 600;
+}
+
+.about-me p {
+    color: #222;
+    font-size: 1.08em;
+    line-height: 1.7;
+    margin-bottom: 1em;
+}
+
+.skills {
+    background: #f4f8fb;
+    border-radius: 12px;
+    max-width: 600px;
+    margin: 32px auto;
+    padding: 1.5em 2em;
+    box-shadow: 0 2px 8px rgba(10, 26, 79, 0.06);
+    text-align: left;
+}
+
+.skills h2 {
+    color: #2541b2;
+    margin-top: 0;
+    margin-bottom: 0.7em;
+    font-size: 1.4em;
+    font-weight: 600;
+}
+
+.skills ul {
+    list-style: disc inside;
+    padding-left: 1em;
+    margin: 0;
+}
+
+.skills li {
+    font-size: 1.08em;
+    color: #222;
+    margin-bottom: 0.5em;
 }
