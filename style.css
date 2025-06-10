@@ -16,12 +16,91 @@ body {
     letter-spacing: 0.01em;
 }
 
+/* Navigation Bar */
+.main-nav {
+    width: 100vw;
+    background: #fff;
+    box-shadow: 0 2px 12px rgba(37, 65, 178, 0.06);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2.5em;
+    height: 64px;
+    position: relative;
+    z-index: 10;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+}
+
+.nav-logo {
+    font-weight: 700;
+    font-size: 1.2em;
+    color: #2541b2;
+    margin-right: 1.5em;
+    letter-spacing: 0.03em;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #2541b2;
+    font-weight: 500;
+    font-size: 1em;
+    padding: 0.2em 0.7em;
+    border-radius: 6px;
+    transition: background 0.15s, color 0.15s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    background: #e6f2ff;
+    color: #0a1a4f;
+}
+
+.nav-search {
+    display: flex;
+    align-items: center;
+    gap: 0.3em;
+}
+
+.nav-search input[type="search"] {
+    padding: 0.45em 0.9em;
+    border: 1px solid #b3e0ff;
+    border-radius: 6px;
+    font-size: 1em;
+    outline: none;
+    transition: border 0.2s;
+    background: #fafdff;
+}
+
+.nav-search input[type="search"]:focus {
+    border-color: #2541b2;
+}
+
+.nav-search button {
+    background: #2541b2;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 0.45em 0.9em;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.nav-search button:hover {
+    background: #1a2233;
+}
+
 /* Abstract blue & white background for header area */
 .header-bg {
     width: 100vw;
     height: 420px;
     position: absolute;
-    top: 0;
+    top: 64px; /* below nav */
     left: 0;
     z-index: 0;
     background:
@@ -38,7 +117,7 @@ body {
     border: none;
     border-radius: 20px;
     max-width: 400px;
-    margin: 56px auto 32px auto;
+    margin: 96px auto 32px auto; /* more space for nav */
     padding: 2.5em 2em 2em 2em;
     box-shadow: 0 8px 32px rgba(10, 26, 79, 0.13), 0 1.5px 6px rgba(10, 26, 79, 0.04);
     text-align: center;
@@ -186,6 +265,20 @@ h2 {
 
 /* Responsive design */
 @media (max-width: 800px) {
+    .main-nav {
+        flex-direction: column;
+        align-items: stretch;
+        height: auto;
+        padding: 0 1em;
+        gap: 0.5em;
+    }
+    .nav-left {
+        gap: 1em;
+        margin-bottom: 0.5em;
+    }
+    .nav-search input[type="search"] {
+        width: 120px;
+    }
     .about-me, .skills {
         max-width: 95vw;
         padding: 1.2em 1em;
@@ -197,6 +290,25 @@ h2 {
 }
 
 @media (max-width: 500px) {
+    .main-nav {
+        padding: 0 0.3em;
+    }
+    .nav-logo {
+        font-size: 1em;
+        margin-right: 0.7em;
+    }
+    .nav-link {
+        font-size: 0.95em;
+        padding: 0.2em 0.4em;
+    }
+    .nav-search input[type="search"] {
+        width: 70px;
+        font-size: 0.95em;
+    }
+    .nav-search button {
+        padding: 0.45em 0.7em;
+        font-size: 0.95em;
+    }
     h1 {
         font-size: 1.3em;
     }
