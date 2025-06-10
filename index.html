@@ -7,15 +7,28 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <nav class="main-nav">
+        <div class="nav-left">
+            <span class="nav-logo">Thulani</span>
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#blog" class="nav-link">Blog</a>
+            <a href="#services" class="nav-link">Services</a>
+        </div>
+        <form class="nav-search" action="#" method="get" role="search">
+            <input type="search" placeholder="Search..." aria-label="Search">
+            <button type="submit">🔍</button>
+        </form>
+    </nav>
     <div class="header-bg"></div>
-    <div class="profile-card">
+    <section id="home" class="profile-card">
         <img src="https://www.gravatar.com/avatar/?d=mp&s=150" alt="Anonymous Profile Picture" style="display:block; margin: 0 auto 1em; border-radius: 50%;">
         <h1>Thulani Wong Haynes</h1>
         <h2>College Student</h2>
         <p>Pioneering Solutions For A Digital Future</p>
-    </div>
+    </section>
 
-    <section class="about-me">
+    <section class="about-me" id="about">
         <h2>About Me</h2>
         <p>
             I am a college student who has recently completed my freshman year. While my major is currently undeclared, I am actively exploring opportunities in the technology field and intend to pursue a career aligned with that interest.
@@ -25,8 +38,13 @@
         </p>
     </section>
 
-    <section class="skills">
-        <h2>Skills</h2>
+    <section id="blog" class="blog-section">
+        <h2>Blog</h2>
+        <p>Coming soon: Articles and insights on technology, productivity, and entrepreneurship.</p>
+    </section>
+
+    <section class="skills" id="services">
+        <h2>Skills & Services</h2>
         <ul>
             <li>Generative AI</li>
             <li>Python</li>
