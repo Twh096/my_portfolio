@@ -16,18 +16,21 @@ body {
     letter-spacing: 0.01em;
 }
 
-/* Make background after About Me section white */
-body::after {
-    content: "";
-    display: block;
-    position: fixed;
+/* Abstract blue & white background for header and about-me area */
+.header-bg {
+    width: 100vw;
+    min-height: 700px; /* Ensures it covers title and about-me */
+    height: auto;
+    position: absolute;
     top: 64px; /* below nav */
     left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: #fff;
     z-index: 0;
+    background:
+        radial-gradient(circle at 70% 30%, #b3e0ff 0%, #e6f2ff 60%, transparent 100%),
+        radial-gradient(circle at 20% 60%, #2541b2 0%, #b3e0ff 60%, transparent 100%),
+        linear-gradient(120deg, #e6f2ff 0%, #b3e0ff 100%);
     pointer-events: none;
+    overflow: hidden;
 }
 
 /* Navigation Bar */
@@ -117,32 +120,16 @@ body::after {
     background: #1a2233;
 }
 
-/* Abstract blue & white background for header area */
-.header-bg {
-    width: 100vw;
-    height: 420px;
-    position: absolute;
-    top: 64px; /* below nav */
-    left: 0;
-    z-index: 0;
-    background:
-        radial-gradient(circle at 70% 30%, #b3e0ff 0%, #e6f2ff 60%, transparent 100%),
-        radial-gradient(circle at 20% 60%, #2541b2 0%, #b3e0ff 60%, transparent 100%),
-        linear-gradient(120deg, #e6f2ff 0%, #b3e0ff 100%);
-    pointer-events: none;
-    overflow: hidden;
-}
-
 /* Card shadow and spacing improvements */
 .profile-card {
     background: #fff;
     border: none;
     border-radius: 20px;
     max-width: 400px;
-    margin: 96px auto 32px auto; /* more space for nav */
+    margin: 96px auto 32px 3vw; /* more space for nav, align left */
     padding: 2.5em 2em 2em 2em;
     box-shadow: 0 8px 32px rgba(10, 26, 79, 0.13), 0 1.5px 6px rgba(10, 26, 79, 0.04);
-    text-align: center;
+    text-align: left;
     position: relative;
     z-index: 2;
     transition: box-shadow 0.2s;
@@ -154,7 +141,7 @@ body::after {
 
 .profile-card img {
     display: block;
-    margin: 0 auto 1.2em;
+    margin: 0 0 1.2em 0;
     border-radius: 50%;
     width: 140px;
     height: 140px;
@@ -192,10 +179,10 @@ h2 {
     background: #fff;
     border-radius: 18px;
     max-width: 700px;
-    margin: 36px auto 0 auto;
+    margin: 36px auto 0 3vw;
     padding: 2.2em 2.5em 1.7em 2.5em;
     box-shadow: 0 4px 18px rgba(10, 26, 79, 0.09);
-    text-align: center;
+    text-align: left;
     position: relative;
     z-index: 2;
 }
@@ -215,7 +202,7 @@ h2 {
     line-height: 1.7;
     margin-bottom: 1em;
     max-width: 600px;
-    margin-left: auto;
+    margin-left: 0;
     margin-right: auto;
 }
 
@@ -223,7 +210,7 @@ h2 {
     background: #fff;
     border-radius: 18px;
     max-width: 700px;
-    margin: 36px auto 36px auto;
+    margin: 36px auto 36px 3vw;
     padding: 1.7em 2.5em;
     box-shadow: 0 4px 18px rgba(10, 26, 79, 0.09);
     text-align: left;
@@ -285,15 +272,6 @@ h2 {
     content: "🎨";
 }
 
-/* Home, Services, and Contact sections aligned to top left */
-.profile-card,
-.about-me,
-.skills {
-    text-align: left;
-    margin-left: 3vw;
-    margin-right: auto;
-}
-
 /* Contact Section - centered at the bottom middle */
 .contact-footer {
     width: 100vw;
@@ -351,6 +329,9 @@ h2 {
         padding: 1.2em 1em;
         margin-left: 0;
     }
+    .header-bg {
+        min-height: 900px;
+    }
 }
 
 @media (max-width: 600px) {
@@ -388,6 +369,9 @@ h2 {
     .skills {
         margin-left: 0;
         text-align: left;
+    }
+    .header-bg {
+        min-height: 1100px;
     }
 }
 
