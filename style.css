@@ -120,16 +120,24 @@ body {
     background: #1a2233;
 }
 
+/* Center all main sections */
+.profile-card,
+.about-me,
+.skills {
+    margin: 36px auto 0 auto;
+    text-align: center;
+    float: none;
+}
+
 /* Card shadow and spacing improvements */
 .profile-card {
     background: #fff;
     border: none;
     border-radius: 20px;
     max-width: 400px;
-    margin: 96px auto 32px 3vw; /* more space for nav, align left */
+    margin: 96px auto 32px auto;
     padding: 2.5em 2em 2em 2em;
     box-shadow: 0 8px 32px rgba(10, 26, 79, 0.13), 0 1.5px 6px rgba(10, 26, 79, 0.04);
-    text-align: left;
     position: relative;
     z-index: 2;
     transition: box-shadow 0.2s;
@@ -141,7 +149,7 @@ body {
 
 .profile-card img {
     display: block;
-    margin: 0 0 1.2em 0;
+    margin: 0 auto 1.2em;
     border-radius: 50%;
     width: 140px;
     height: 140px;
@@ -179,10 +187,8 @@ h2 {
     background: #fff;
     border-radius: 18px;
     max-width: 700px;
-    margin: 36px auto 0 3vw;
     padding: 2.2em 2.5em 1.7em 2.5em;
     box-shadow: 0 4px 18px rgba(10, 26, 79, 0.09);
-    text-align: left;
     position: relative;
     z-index: 2;
 }
@@ -202,7 +208,7 @@ h2 {
     line-height: 1.7;
     margin-bottom: 1em;
     max-width: 600px;
-    margin-left: 0;
+    margin-left: auto;
     margin-right: auto;
 }
 
@@ -210,10 +216,9 @@ h2 {
     background: #fff;
     border-radius: 18px;
     max-width: 700px;
-    margin: 36px auto 36px 3vw;
+    margin: 36px auto 36px auto;
     padding: 1.7em 2.5em;
     box-shadow: 0 4px 18px rgba(10, 26, 79, 0.09);
-    text-align: left;
     position: relative;
     z-index: 2;
 }
@@ -230,7 +235,9 @@ h2 {
 .skills ul {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
+    display: inline-block;
+    text-align: left;
 }
 
 .skills li {
@@ -327,7 +334,8 @@ h2 {
     .about-me, .skills, .contact-footer, .profile-card {
         max-width: 95vw;
         padding: 1.2em 1em;
-        margin-left: 0;
+        margin-left: auto;
+        margin-right: auto;
     }
     .header-bg {
         min-height: 900px;
@@ -367,8 +375,9 @@ h2 {
     .profile-card,
     .about-me,
     .skills {
-        margin-left: 0;
-        text-align: left;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
     }
     .header-bg {
         min-height: 1100px;
