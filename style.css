@@ -127,6 +127,7 @@ body {
     margin: 36px auto 0 auto;
     text-align: center;
     float: none;
+    display: block;
 }
 
 /* Card shadow and spacing improvements */
@@ -191,6 +192,7 @@ h2 {
     box-shadow: 0 4px 18px rgba(10, 26, 79, 0.09);
     position: relative;
     z-index: 2;
+    text-align: center;
 }
 
 .about-me h2 {
@@ -221,6 +223,7 @@ h2 {
     box-shadow: 0 4px 18px rgba(10, 26, 79, 0.09);
     position: relative;
     z-index: 2;
+    text-align: center;
 }
 
 .skills h2 {
@@ -336,6 +339,11 @@ h2 {
         padding: 1.2em 1em;
         margin-left: auto;
         margin-right: auto;
+        text-align: center;
+    }
+    .skills ul {
+        margin-left: auto;
+        margin-right: auto;
     }
     .header-bg {
         min-height: 900px;
@@ -378,6 +386,10 @@ h2 {
         margin-left: auto;
         margin-right: auto;
         text-align: center;
+    }
+    .skills ul {
+        margin-left: auto;
+        margin-right: auto;
     }
     .header-bg {
         min-height: 1100px;
