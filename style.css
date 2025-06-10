@@ -285,7 +285,16 @@ h2 {
     content: "🎨";
 }
 
-/* Contact Section - now styled as a footer and centered at the bottom */
+/* Home, Services, and Contact sections aligned to top left */
+.profile-card,
+.about-me,
+.skills {
+    text-align: left;
+    margin-left: 3vw;
+    margin-right: auto;
+}
+
+/* Contact Section - centered at the bottom middle */
 .contact-footer {
     width: 100vw;
     max-width: 100%;
@@ -337,13 +346,10 @@ h2 {
     .nav-search input[type="search"] {
         width: 120px;
     }
-    .about-me, .skills, .contact-footer {
+    .about-me, .skills, .contact-footer, .profile-card {
         max-width: 95vw;
         padding: 1.2em 1em;
-    }
-    .profile-card {
-        max-width: 95vw;
-        padding: 1.5em 0.7em;
+        margin-left: 0;
     }
 }
 
@@ -376,6 +382,12 @@ h2 {
     .profile-card img {
         width: 90px;
         height: 90px;
+    }
+    .profile-card,
+    .about-me,
+    .skills {
+        margin-left: 0;
+        text-align: left;
     }
 }
 
